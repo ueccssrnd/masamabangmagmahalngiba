@@ -1,0 +1,336 @@
+/* masama bang magmahal ng iba*/
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue-webfont.eot');
+  src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasNeue-webfont.woff') format('woff'),
+  url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+  url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  z-index: 1;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+
+#index {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#index.multiple-bg {
+  background: #fff;
+  background-image: url('../images/index-bg.jpg');
+  background-size: cover;
+}
+
+#index > .overlay {
+  background: rgba(255,214,0,0.8);
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+#index > .branding {
+  left: 50%;
+  margin-left: -317.5px;
+  margin-top: -169.5px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  z-index: 1;
+}
+
+#index > .branding h1.logo {
+  /*  border: 5px solid;*/
+  color: #000;
+  display: block;
+  line-height: 1;
+  padding: 10px;
+  font: 4em 'BebasNeue';
+  margin: 10px 0 10px 0;
+  padding: 5px 25px 0;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#index > .branding h1.logo:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.branding > .slide {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.branding > .slide > li {
+  color: #fff;
+  font: 1.1em Segoe Ui, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+#navigation {
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+  height: 80px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  width: 100%;
+  z-index: 999;
+}
+
+#navigation > .container {
+  height: 100%;
+}
+
+#navigation > .container > .branding {
+  display: inline-block;
+  height: 100%;
+}
+
+#navigation > .container > .branding:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  vertical-align: middle;
+}
+
+#navigation > .container > .branding h1.logo,
+#navigation > .container > .branding img.logo {
+  display: inline-block;
+  font: 2em BebasNeue;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#primary-nav {
+  height: 100%;
+  list-style: none;
+  text-align: right;
+}
+
+#primary-nav > li {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px;
+  font: 1.6em BebasNeue;
+  text-align: center;
+}
+
+/* centering hack fella */
+#primary-nav > li:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  vertical-align: middle;
+}
+
+#primary-nav > li a {
+  color: #333;
+  text-shadow: 0 1px 0 #ccc;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#primary-nav > li a:hover {
+  color: rgba(255,214,0,1);
+  text-decoration: none;
+}
+
+/* About */
+#about .container > h1, #team .container > h1 {
+  border-bottom: 1px solid #dfdfdf;
+  font: 4em BebasNeue;
+  margin: 40px 0 40px 0;
+  text-align: center;
+}
+
+#about p {
+  color: #888;
+  font: 1 Helvetica Neue;
+  text-align: center;
+  text-indent: 80px;
+}
+
+#parallax-1 {
+  background: #eee;
+  height: 400px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#parallax-1:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  vertical-align: middle;
+}
+
+#parallax-1 > h1 {
+  color: #515A5f;
+  display: inline-block;
+  font: 4em BebasNeue;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#parallax-1 > span[class^='icon-'] {
+  color: rgba(255,214,0,1);
+  display: inline-block;
+  font-size: 1.8em;
+  margin-top: -25px;
+  vertical-align: middle;
+}
+
+
+#the-team {
+  height: 400px;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#the-team > li {
+  border-radius: 20px;
+  display: inline-block;
+  height: 300px;
+  margin: 0 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 270px;
+}
+
+#the-team > li > .about {
+  background: rgba(0,0,0,0.8);
+  bottom: 0;
+  height: 60%;
+  position: absolute;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#the-team > li > .about > h1 {
+  color: #fff;
+  font: 2em Helvetica Neue;
+  font-weight: 300;
+  margin: 20px 0 10px 0;
+  padding: 0;
+}
+
+#the-team > li > .about > span {
+  display: block;
+  color: #fff;
+  font: 1.5em Helvetica Neue;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+}
+
+#the-team > li > .about > a[class^='icon-'] {
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0 8px;
+  width: 40px;
+}
+
+#the-team > li > .about > a[class^='icon-']:hover {
+  text-decoration: none;
+}
+
+#the-team > li > .about > .facebook {
+  background: #3b5998;
+}
+
+#the-team > li > .about > .twitter {
+  background: #00acee;
+}
+
+#the-team > li > .about > .website {
+  background: #c4302b;
+}
+
+#works {
+  background: #eee;
+  display: inline-block;
+  margin: 40px 0 0 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#works > ul {
+  list-style: none;
+}
+
+#works:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  vertical-align: middle;
+}
+
+#works > h1 {
+  color: #515A5f;
+  display: inline-block;
+  font: 4em BebasNeue;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#works > ul > li {
+  display: inline-block;
+  margin: 10px 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 340px;
+}
